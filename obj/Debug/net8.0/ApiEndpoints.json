@@ -1,0 +1,19 @@
+[
+  {
+    "ContainingType": "CoinsController",
+    "Method": "GetCoin",
+    "RelativePath": "Coins",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "coinId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetCoin"
+  }
+]

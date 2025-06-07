@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LiquidLabs_Test.props" />
+</Project>

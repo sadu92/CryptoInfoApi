@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "LiquidLabs_Test",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Coins": {
+      "get": {
+        "tags": [
+          "Coins"
+        ],
+        "operationId": "GetCoin",
+        "parameters": [
+          {
+            "name": "coinId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

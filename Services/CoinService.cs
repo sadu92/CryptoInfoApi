@@ -94,7 +94,7 @@ public class CoinService
         using var conn = new SqlConnection(_connectionString);
         await conn.OpenAsync();
 
-        var cmd = new SqlCommand("SELECT top 15 * FROM Coins", conn);
+        var cmd = new SqlCommand("SELECT * FROM Coins", conn);
         using var reader = await cmd.ExecuteReaderAsync();
 
         while (await reader.ReadAsync())

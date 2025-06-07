@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\LiquidLabs_Test.props" />
-</Project>

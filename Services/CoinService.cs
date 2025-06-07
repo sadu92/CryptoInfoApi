@@ -87,4 +87,32 @@ public class CoinService
 
         await cmd.ExecuteNonQueryAsync();
     }
+    public async Task<List<Coin>> GetAllCoinsAsync()
+    {
+        var coins = new List<Coin>();
+
+        using var conn = new SqlConnection(_connectionString);
+        await conn.OpenAsync();
+
+        var cmd = new SqlCommand("SELECT top 15 * FROM Coins", conn);
+        using var reader = await cmd.ExecuteReaderAsync();
+
+        while (await reader.ReadAsync())
+        {
+            coins.Add(new Coin
+            {
+                Id = (int)reader["Id"],
+                CoinId = reader["CoinId"].ToString(),
+                Name = reader["Name"].ToString(),
+                Symbol = reader["Symbol"].ToString(),
+                CurrentPrice = (decimal)reader["CurrentPrice"],
+                MarketCap = (long)reader["MarketCap"],
+                TotalVolume = (long)reader["TotalVolume"],
+                PriceChange24h = (float)(double)reader["PriceChange24h"]
+            });
+        }
+
+        return coins;
+    }
+
 }

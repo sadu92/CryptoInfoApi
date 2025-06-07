@@ -2,7 +2,7 @@
   {
     "ContainingType": "CoinsController",
     "Method": "GetCoin",
-    "RelativePath": "Coins",
+    "RelativePath": "api/Coins/{coinId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,10 +10,19 @@
       {
         "Name": "coinId",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": [],
-    "EndpointName": "GetCoin"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinsController",
+    "Method": "GetAllCoins",
+    "RelativePath": "api/Coins/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

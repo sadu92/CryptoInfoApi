@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LiquidLabs_Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4edcc81f1e20c4875e16fcf227b71c80916ca81c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LiquidLabs_Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LiquidLabs_Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
